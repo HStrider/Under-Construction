@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+
+        {% block title %}
+
+        Contact
+
+        {% endblock %}
+
+
+        {% block main %}
+            <div>
+                <h1>How to contact us</h1>
+                <section class="hero">
+                  <h1>Contact Us</h1>
+                  <p>Get in touch with us to learn more about our BIM projects, ArcGIS "Project" tool, and construction management analysis services.</p>
+              </section>
+              <section class="contact">
+                  <h2>Send us a message</h2>
+                  <form action="/contact" method="POST">
+                      <label for="name">Name</label>
+                      <input autocomplete="off" type="text" id="name" name="name" required>
+                      <label for="email">E-mail</label>
+                      <input autocomplete="off" type="email" id="email" name="email" required>
+                      <label for="phone">Mobile Number</label>
+                      <input autocomplete="off" type="tel" id="phone" name="phone">
+                      <label for="message">Message</label>
+                      <textarea id="message" name="message"></textarea>
+                      <button type="submit">Send Message</button>
+                  </form>
+              </section>
+              <section></section>
+                <div>
+                  Our phone numbers : +201223678945
+                </div>
+                <div>
+                  our e-mails: Constructioncosultnatunlimited@heros.com
+                </div>
+                <div>
+                  <h2>
+                  so lucky to have contacted you!!
+                  </h2>
+                </div>
+              </section>
+            </div>
+    {% endblock %}

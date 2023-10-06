@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="/static/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="intial-scale=1 width=device-width">
+        </title>Construction Consultants Limited {% block title %}{% endblock %}</title>
+    </head>
+    <body>
+        <header>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+              <a class="navbar-brand" href="#">Construction Consultants Limited</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span hclass="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="/" id="home" onClick="parent.location='index.html'"value='home'>Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/about" id="about" onClick="parent.location='about.html'"value='about'>About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contact" id="Contact" onClick="parent.location='contact.html'"value='Contact'>Contact</a>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="payment" id="payment" onClick="parent.location='payment.html'"value='payment'>Payment</a>
+                  </li>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <header>
+          <main>
+            {% block main %}{% endblock %}
+        </main>
+        <footer class="footer-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="/bim">BIM</a></li>
+                            <li><a href="/management">management</a></li>
+                            <li><a href="/arcgis">ARCGis</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="/apology">Company</a></li>
+                            <li><a href="/apology">Team</a></li>
+                            <li><a href="/apology">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-dark">
+                        <h3>Construction Consultants Limited</h3>
+                        <p>Construction Consultants Limited, established in 2006 is a leading construction company and engineering firm. We are committed to providing high quality facilities that are safe, reliable and cost effective. Our mission is to provide quality services from conception through construction to the final handover of project to ensure that clients have their needs met through the advising of our highly skilled staff..</p>
+                    </div>
+                    <div>
+                      <a href="/apology" class="fa fa-facebook"></a>
+                      <a href="/apology" class="fa fa-linkedin"></a>
+                      <a href="/apology" class="fa fa-youtube"></a>
+                      <a href="/apology" class="fa fa-instagram"></a>
+                      <a href="/apology" class="fa fa-pinterest"></a>
+                      <a href="/apology" class="fa fa-skype"></a>
+                    </div>
+                </div>
+                <p class="copyright">Construction Consultants Limited © 2014</p>
+            </div>
+        </footer>
+    </body>
+</html>
